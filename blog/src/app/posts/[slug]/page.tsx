@@ -15,7 +15,7 @@ const PostPage = (props: any) => {
     return (
         <>
             <div className="flex justify-center items-center v-screen">
-                <div className="bg-gray-900 rounded-lg p-11 mb-10 w-screen min-h-96 mx-10 overflow-clip">
+                <div className="bg-gray-900 rounded-lg p-11 mb-10 w-screen min-h-96 mx-10 prose dark:prose-invert">
                     <Markdown>{content}</Markdown>
                 </div>
             </div>
