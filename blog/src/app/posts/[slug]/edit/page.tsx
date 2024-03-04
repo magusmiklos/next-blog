@@ -95,15 +95,15 @@ const PostPage = (props: any) => {
     };
 
     return (
-        <div className="container mx-auto p-4 h-screen">
-            <h1 className="text-2xl font-bold mb-4">Edit</h1>
+        <div className="container mx-auto p-4 h-96">
+            <h1 className="text-2xl font-bold mb-4 text-white">Edit</h1>
             <textarea
                 id='save'
-                className="bg-gray-900 w-full h-1/2 p-2 border border-gray-900 rounded-md resize-none focus:outline-none"
+                className="bg-opacity-20 backdrop-blur-lg backdrop-filter bg-gray-500 shadow-lg dark:bg-opacity-50 dark:bg-gray-900 w-full h-96 p-2 rounded-md resize-none focus:outline-none text-white"
                 value={text}
                 onChange={handleChange}
             ></textarea>
-            <div className='flex'>
+            <div className='flex flex-col sm:flex-row'>
                 <button
                     className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                     onClick={handleSave}
@@ -111,7 +111,7 @@ const PostPage = (props: any) => {
                     Save Changes
                 </button>
                 <button
-                    className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 focus:outline-none focus:bg-red-600 ml-10"
+                    className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 focus:outline-none focus:bg-red-600 ml-0 sm:ml-10"
                     onClick={handleDelete}
                 >
                     Delete

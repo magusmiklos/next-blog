@@ -1,5 +1,4 @@
 import fs from "fs";
-import Link from "next/link";
 import Markdown from 'markdown-to-jsx';
 
 const getPostContent = (slug: string) => {
@@ -14,9 +13,9 @@ const PostPage = (props: any) => {
     const content = getPostContent(slug);
     return (
         <>
-            <div className="flex justify-center items-center v-screen">
-                <div className="bg-gray-900 rounded-lg p-11 mb-10 w-screen min-h-96 mx-10 prose dark:prose-invert">
-                    <Markdown>{content}</Markdown>
+            <div className="flex justify-center items-center v-screen w-full">
+                <div className="bg-opacity-20 backdrop-blur-lg backdrop-filter bg-gray-500 shadow-lg dark:bg-opacity-50 dark:bg-gray-900 rounded-lg p-11 mb-10 min-h-96 mx-10 w-10/12">
+                    <Markdown class="prose prose-invert text-white">{content}</Markdown>
                 </div>
             </div>
         </>

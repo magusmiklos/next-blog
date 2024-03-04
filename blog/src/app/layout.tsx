@@ -18,14 +18,14 @@ export default function RootLayout({
 
   const header = (<div className="flex justify-center">
     <Link href="/">
-      <h1 className="text-5xl font-bold mb-10 mt-10">
+      <h1 className="text-5xl font-bold mb-10 mt-10 text-white">
         Blog
       </h1>
     </Link>
   </div>);
 
   return (
-    <html lang="en">
+    <html lang="en" className="bg-gradient-radial from-blue-200 via-blue-100 to-white bg-no-repeat bg-cover h-auto min-h-screen dark:bg-gradient-radial dark:from-black dark:to-gray-900">
       <body className={inter.className}>
         {header}
         {children}
