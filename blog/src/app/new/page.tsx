@@ -38,7 +38,7 @@ const PostPage = (props: any) => {
 
 
     return (
-        <div className="container mx-auto p-4 h-screen">
+        <div className="container mx-auto p-4 h-96">
             <h1 className="text-2xl text-white font-bold mb-4">Name</h1>
             <textarea
                 id='name'
@@ -47,7 +47,7 @@ const PostPage = (props: any) => {
             <h1 className="text-2xl text-white font-bold mb-4">Content</h1>
             <textarea
                 id='save'
-                className="bg-opacity-20 backdrop-blur-lg backdrop-filter bg-gray-500 dark:bg-opacity-50 shadow-lg dark:bg-gray-900 w-full h-1/2 p-2 rounded-md resize-none focus:outline-none text-white"
+                className="bg-opacity-20 backdrop-blur-lg backdrop-filter bg-gray-500 dark:bg-opacity-50 shadow-lg dark:bg-gray-900 w-full h-96 p-2 rounded-md resize-none focus:outline-none text-white"
             ></textarea>
             <div className='flex flex-col sm:flex-row'>
                 <button
