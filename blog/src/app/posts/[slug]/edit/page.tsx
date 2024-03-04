@@ -111,7 +111,7 @@ const PostPage = (props: any) => {
                     Save Changes
                 </button>
                 <button
-                    className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 focus:outline-none focus:bg-red-600 ml-0 sm:ml-10"
+                    className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 focus:outline-none focus:bg-red-600 ml-0 sm:ml-10 mb-10 sm:mb-0"
                     onClick={handleDelete}
                 >
                     Delete

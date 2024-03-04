@@ -25,7 +25,7 @@ export default function RootLayout({
   </div>);
 
   return (
-    <html lang="en" className="bg-gradient-radial from-blue-200 via-blue-100 to-white bg-no-repeat bg-cover h-auto min-h-screen dark:bg-gradient-radial dark:from-black dark:to-gray-900">
+    <html lang="en" className="bg-gradient-radial from-blue-200 via-blue-100 to-white bg-cover h-auto min-h-screen dark:bg-gradient-radial dark:from-black dark:to-gray-900 overflow-auto">
       <body className={inter.className}>
         {header}
         {children}
