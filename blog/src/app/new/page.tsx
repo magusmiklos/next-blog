@@ -12,7 +12,7 @@ const PostPage = (props: any) => {
         try {
             const textarea: HTMLTextAreaElement | null = document.getElementById('name') as HTMLTextAreaElement;
             let slug: string = textarea && textarea.value.trim() ? textarea.value.trim() : 'new';
-            slug = slug.replaceAll(' ','-')
+            slug = slug.replaceAll(' ','-').slice(0,10)
             console.log(slug)
             const text: HTMLTextAreaElement | null = document.getElementById('save') as HTMLTextAreaElement;
 
