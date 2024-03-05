@@ -23,4 +23,8 @@
   }
 }
 
+* {
+  @apply transition-colors duration-1000
+}
+
 
