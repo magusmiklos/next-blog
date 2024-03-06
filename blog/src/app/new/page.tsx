@@ -1,4 +1,5 @@
 "use client";
+'force-dynamic';
 import { useRouter } from 'next/navigation';
 
 

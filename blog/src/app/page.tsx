@@ -1,5 +1,8 @@
+'force-dynamic';
 import fs from "fs";
 import Link from "next/link";
+
+export const dynamic = 'force-dynamic'
 
 const getPostMetadata = () => {
   const folder = "src/posts";

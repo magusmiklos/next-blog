@@ -1,3 +1,4 @@
+'force-dynamic';
 import fs from "fs";
 import Markdown from 'markdown-to-jsx';
 
