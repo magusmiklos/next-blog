@@ -5,7 +5,7 @@ export async function POST(request: Request) {
 
     const data = await request.json();
     const slug = data["data"];
-    const folder = path.join(process.cwd(),"src/posts")
+    const folder = "src/posts"
     const file = path.join(folder,`${slug}.md`);
     
 
