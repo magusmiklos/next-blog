@@ -3,7 +3,7 @@ import path, { join } from 'path';
 import Markdown from 'markdown-to-jsx';
 
 const getPostContent = (slug: string) => {
-    const file = path.join("tmp",`${slug}.md`);
+    const file = path.join(process.cwd(),"posts",`${slug}.md`);
     const content = fs.readFileSync(file,"utf8");
     return content;
 }

@@ -5,7 +5,7 @@ export async function POST(request: Request) {
 
     const data = await request.json();
     const slug = data["data"];
-    const file = path.join("tmp",`${slug}.md`);
+    const file = path.join(process.cwd(),"posts",`${slug}.md`);
     const content = fs.readFileSync(file,"utf8");
 
     return new Response(content);
