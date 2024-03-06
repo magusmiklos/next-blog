@@ -1,9 +1,9 @@
-'force-dynamic';
 import fs from "fs";
+import path, { join } from 'path';
 import Markdown from 'markdown-to-jsx';
 
 const getPostContent = (slug: string) => {
-    const file = `src/posts/${slug}.md`;
+    const file = path.join(process.cwd(),"src","posts",`${slug}.md`);
     const content = fs.readFileSync(file,"utf8");
     return content;
 }
