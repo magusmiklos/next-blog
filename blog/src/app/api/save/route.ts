@@ -4,7 +4,7 @@ export async function POST(request: Request) {
 
     const data = await request.json();
     const slug = data["data"];
-    const folder = "posts/";
+    const folder = `${process.cwd()}/posts/`;
     const file = `${folder}${slug}.md`;
     const content = data["text"]
 

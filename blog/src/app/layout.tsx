@@ -28,7 +28,7 @@ export default function RootLayout({
     </Link>
   </div>);
 
-  const htmlClasses = " bg-gradient-radial from-blue-200 via-blue-100 to-white bg-cover h-auto min-h-screen dark:bg-gradient-radial dark:from-black dark:to-gray-900 overflow-auto"
+  const htmlClasses = " bg-gradient-radial from-blue-200 via-blue-100 to-white bg-cover h-auto min-h-screen dark:bg-gradient-radial dark:from-black dark:to-gray-900 overflow-auto "
 
   return (
     
