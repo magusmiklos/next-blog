@@ -6,7 +6,7 @@ import Link from "next/link";
 export const dynamic = 'force-dynamic'
 
 const getPostMetadata = () => {
-  const folder = path.join(process.cwd(),"src","posts");
+  const folder = path.join(process.cwd(),"tmp");
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   const slugs = markdownPosts.map((file) => file.replace(".md",""));
