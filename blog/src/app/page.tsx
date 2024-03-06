@@ -2,7 +2,7 @@ import fs from "fs";
 import Link from "next/link";
 
 const getPostMetadata = () => {
-  const folder = `${process.cwd()}/posts`;
+  const folder = `${process.cwd()}/src/posts`;
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   const slugs = markdownPosts.map((file) => file.replace(".md",""));

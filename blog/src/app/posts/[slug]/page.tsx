@@ -3,7 +3,7 @@ import Markdown from 'markdown-to-jsx';
 
 const getPostContent = (slug: string) => {
     const folder = process.cwd();
-    const file = `${folder}/posts/${slug}.md`;
+    const file = `${folder}/src/posts/${slug}.md`;
     const content = fs.readFileSync(file,"utf8");
     return content;
 }
